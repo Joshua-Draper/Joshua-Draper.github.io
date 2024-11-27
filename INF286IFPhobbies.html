@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hobbies</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body {
+                background: linear-gradient(blanchedalmond,#fff7f9);
+            }
+            h1 {
+                text-align: center;
+            }
+            p {
+                font-size: 19px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .topnav {
+                background-color: black;
+                overflow: hidden;
+            }
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .page{
+                position:relative;
+                width:100%;
+            }
+            .image-gallery {
+                width:70%;
+                margin:100px auto 50px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 30px;
+            }
+            .image-gallery img{
+                width:100%;
+                cursor:pointer;
+            }
+            .image-gallery img:hover{
+                transform: scale(0.8) rotate(-15deg);
+                border-radius: 20px;
+                box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+            }
+            .full-image {
+                width:100%;
+                height:100vh;
+                background:rgba(0,0,0,0.9);
+                position:fixed;
+                top:0;
+                left:0;
+                display:none;
+                align-items: center;
+                justify-content: center;
+                z-index: 100;
+            }
+            .full-image img{
+                width:90%;
+                max-width: 500px;
+            }
+            .full-image span{
+                position: absolute;
+                top:5%;
+                right:5%;
+                font-size: 30px;
+                color:#fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a style="margin:10px;font-size:25px;" href="index.html">Home</a>
+            <a style="margin:10px;font-size:25px;" href="INF286IFPabout.html">About</a>
+            <a style="margin:10px;font-size:25px;" href="INF286IFPeducation.html">Education</a>
+            <a style="margin:10px;font-size:25px;" href="INF286IFPhobbies.html">Hobbies</a>
+            <a style="margin:10px;font-size:25px;" href="INF286IFPcontact.html">Contact</a>
+        </div>
+        <div class="page">
+            <br>
+            <h1>My Favorite Hobbies</h1>
+            <br>
+            <p>Some of my favorite hobbies include playing basketball, which I have played my entire life. I love basketball because it always gave me an outlet to be active and to be a part of a team working together to achieve the same goal, all while having fun. Other physical activities I love are pickleball, disc golf, and spikeball. I also enjoy watching sports and rooting for my favorite teams. I enjoy playing board games, video games, watching movies, and spending time with my family. My favortie board game is Settlers of Catan. Another thing I like to do in my free time is practice using HTML and CSS to learn new ways to style and format webpages. </p>
+        </div>
+        <div class="full-image" id="fullImageBox">
+            <img src="Images/uklogo.png" id="fullImage">
+            <span onclick="closeFullImage()">X</span>
+        </div>
+        <div class="image-gallery">
+            <img src="Images/uklogo.png" onclick="openFullImage(this.src)">
+            <img src="Images/Bballpic1.JPG" onclick="openFullImage(this.src)">
+            <img src="Images/catanpic.jpg" onclick="openFullImage(this.src)">
+            <img src="Images/Bballpic2.JPG" onclick="openFullImage(this.src)">
+            <img src="Images/Wonderfulpic.jpg" onclick="openFullImage(this.src)">
+            <img src="Images/Bballpic3.JPG" onclick="openFullImage(this.src)">
+        </div>
+    <script type="text/javascript">
+        var fullImageBox = document.getElementById("fullImageBox");
+        var fullImage = document.getElementById("fullImage");
+        function openFullImage(pic){
+            fullImageBox.style.display = "flex";
+            fullImage.src = pic;
+        }
+        function closeFullImage(){
+            fullImageBox.style.display = "none";
+        }
+    </script>
+    </body>
+</html>
