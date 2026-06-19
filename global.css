@@ -57,3 +57,27 @@ h1 {
     text-align: center;
     margin-bottom: 30px;
 }
+
+/* Resume Button Styles */
+.resume-container {
+    margin-bottom: 35px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #a363aa;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(163, 99, 170, 0.2);
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #8b4fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(163, 99, 170, 0.3);
+}
