@@ -1,0 +1,58 @@
+/* Import Modern Professional Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(135deg, #fffcf7 0%, #fff5f7 100%);
+    color: #2d3748;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* Unified Navigation Bar Styling */
+.topnav {
+    background-color: #1a202c;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.topnav a {
+    color: #e2e8f0;
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+.topnav a:hover {
+    background-color: #a363aa;
+    color: white;
+}
+
+/* Universal Page Containers */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 30px;
+}
