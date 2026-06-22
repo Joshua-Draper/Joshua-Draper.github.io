@@ -1,5 +1,5 @@
 /* Import Premium Geometric Font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -46,7 +46,6 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Active Page Highlight state (Optional layout helper) */
 .topnav a.active {
     color: #ffffff;
     background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
