@@ -19,9 +19,103 @@
 
     <div class="container">
         <h1>Technical Portfolio & Projects</h1>
-        <p class="projects-subtitle">A collection of academic and practical work focusing on relational databases, network architecture, front-end development, and security frameworks.</p>
+        <p class="projects-subtitle">A collection of academic and practical work focusing on system architecture, database design, Linux infrastructure, cybersecurity, and full-stack development.</p>
         
         <div class="projects-grid">
+
+            <!-- Internship Card -->
+            <div class="project-card">
+                <div class="card-body">
+                    <span class="project-category">Professional Experience</span>
+                    <h3>Great American Insurance Group</h3>
+                    <div class="tech-badges">
+                        <span class="badge">Content Management</span>
+                        <span class="badge">Enterprise Systems</span>
+                        <span class="badge">IT Infrastructure</span>
+                        <span class="badge">Workflow Optimization</span>
+                    </div>
+                    <ul class="project-details">
+                        <li><strong>Role:</strong> Content Publishing Intern</li>
+                        <li>Supported enterprise publishing operations and managed web content deployment across corporate platforms.</li>
+                        <li>Collaborated with technical and design teams to maintain publishing workflows, formatting, and structural integrity.</li>
+                        <li>Documented technical procedures and publishing guidelines to enhance operational efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Systems Analysis & Design Card -->
+            <div class="project-card">
+                <div class="card-body">
+                    <span class="project-category">Systems Architecture</span>
+                    <h3>Systems Analysis & Design Modeling</h3>
+                    <div class="tech-badges">
+                        <span class="badge">UML Modeling</span>
+                        <span class="badge">Data Flow Diagrams</span>
+                        <span class="badge">Structure Charts</span>
+                        <span class="badge">ISBA 310</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Designed comprehensive architectural models for online ordering and inventory management systems.</li>
+                        <li>Created Level-0 and Diagram 0 Data Flow Diagrams (DFDs) to map inputs, outputs, processes, and data stores.</li>
+                        <li>Constructed top-down Structure Charts illustrating modular function breakdown, data couples, and control flags.</li>
+                        <li>Engineered Use Case diagrams defining multi-actor operational boundaries (Customer, Manager, Delivery Driver).</li>
+                    </ul>
+                </div>
+                <div class="card-footer" style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="ISBA310-Use-Case Diagram v3 (Correct).pdf" target="_blank" class="project-link">📄 Use Case Diagram (PDF) &rarr;</a>
+                    <a href="ISBA310 PP2 Level0 v3.pdf" target="_blank" class="project-link">📄 Level-0 DFD (PDF) &rarr;</a>
+                    <a href="Data flow diagram (logical).pdf" target="_blank" class="project-link">📄 Inventory DFD (PDF) &rarr;</a>
+                    <a href="ISBA310 PP3.pdf" target="_blank" class="project-link">📄 Structure Chart (PDF) &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Linux & Containerization Card -->
+            <div class="project-card">
+                <div class="card-body">
+                    <span class="project-category">Infrastructure & Cloud</span>
+                    <h3>Linux Infrastructure & Containerization</h3>
+                    <div class="tech-badges">
+                        <span class="badge">Ubuntu Server</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Apache</span>
+                        <span class="badge">OpenLDAP</span>
+                        <span class="badge">Netplan</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Configured Ubuntu Server virtual machines using Netplan YAML static networking and routing rules.</li>
+                        <li>Containerized Apache HTTP web servers using Docker, mapping custom ports (8080:80) and volume mounts.</li>
+                        <li>Implemented OpenLDAP directory services in Docker for centralized user authentication and group management.</li>
+                        <li>Diagnosed network traffic using live analysis tools including `iftop`, `nslookup`, and `ping`.</li>
+                    </ul>
+                </div>
+                <div class="card-footer" style="display: flex; flex-direction: column; gap: 8px;">
+                    <a href="Lab 5 - Network Configuration and Troubleshooting _ Wiki.js.pdf" target="_blank" class="project-link">📄 Netplan & Diagnostics Documentation &rarr;</a>
+                    <a href="Lab 7_ Docker Apache Containerization _ Wiki.js.pdf" target="_blank" class="project-link">📄 Docker Apache Setup Documentation &rarr;</a>
+                    <a href="Lab 14_ OpenLDAP Implementation _ Wiki.js.pdf" target="_blank" class="project-link">📄 OpenLDAP Container Documentation &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Cybersecurity Card -->
+            <div class="project-card">
+                <div class="card-body">
+                    <span class="project-category">Cybersecurity</span>
+                    <h3>System Hardening & Security Controls</h3>
+                    <div class="tech-badges">
+                        <span class="badge">UFW Firewall</span>
+                        <span class="badge">GPG Encryption</span>
+                        <span class="badge">SSH Hardening</span>
+                        <span class="badge">Access Control</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Configured UFW (Uncomplicated Firewall) rules to restrict port access, block Telnet, and secure FTP channels.</li>
+                        <li>Hardened SSH server configurations by enforcing non-root login restrictions and dedicated user permissions.</li>
+                        <li>Utilized GPG (GNU Privacy Guard) symmetric encryption for secure file storage and managed agent caching.</li>
+                        <li>Audited user accounts and shadow file permissions to identify and remove unauthenticated/passwordless accounts.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Database Systems Card -->
             <div class="project-card">
                 <div class="card-body">
                     <span class="project-category">Database Systems</span>
@@ -37,11 +131,9 @@
                         <li>Optimized structures to systematically address managerial logic and business-intelligence scenarios.</li>
                     </ul>
                 </div>
-                <div class="card-footer">
-                    <a href="https://github.com" target="_blank" class="project-link">View Repository &rarr;</a>
-                </div>
             </div>
 
+            <!-- Web Engineering Card -->
             <div class="project-card">
                 <div class="card-body">
                     <span class="project-category">Web Engineering</span>
@@ -50,7 +142,6 @@
                         <span class="badge">HTML5</span>
                         <span class="badge">CSS3 Layouts</span>
                         <span class="badge">UI/UX Redesign</span>
-                        <span class="badge">Team Collaboration</span>
                     </div>
                     <ul class="project-details">
                         <li>Collaborated in a development group to completely restructure the front-end design of Berkshire Hathaway's corporate presence.</li>
@@ -59,29 +150,10 @@
                     </ul>
                 </div>
                 <div class="card-footer">
-                    <a href="https://github.com" target="_blank" class="project-link">View Code base &rarr;</a>
+                    <a href="https://github.com/Joshua-Draper/Joshua-Draper.github.io" target="_blank" class="project-link">View Code base &rarr;</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="card-body">
-                    <span class="project-category">Infrastructure & Security</span>
-                    <h3>Network Infrastructure Configuration</h3>
-                    <div class="tech-badges">
-                        <span class="badge">Networking</span>
-                        <span class="badge">Topology Design</span>
-                        <span class="badge">Packet Analysis</span>
-                    </div>
-                    <ul class="project-details">
-                        <li>Configured and systematically mapped sub-net structures and logical network pathways.</li>
-                        <li>Analyzed basic protocol behaviors and packet flows to optimize host delivery environments.</li>
-                        <li>Documented modular connectivity profiles to simulate resilient, multi-tiered hardware routing solutions.</li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com" target="_blank" class="project-link">View Documentation &rarr;</a>
-                </div>
-            </div>
         </div>
     </div>
 </body>
