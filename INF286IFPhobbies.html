@@ -48,22 +48,29 @@
             display: none;
             align-items: center;
             justify-content: center;
-            z-index: 100;
+            z-index: 9999; /* Increased to ensure overlay sits above topnav */
         }
         .full-image img {
             width: 90%;
             max-width: 600px;
+            max-height: 80vh;
+            object-fit: contain;
             border-radius: 12px;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
         }
         .full-image span {
-            position: absolute;
-            top: 5%;
-            right: 5%;
-            font-size: 36px;
+            position: fixed; /* Pins 'X' to the top right of viewport regardless of page scroll */
+            top: 25px;
+            right: 35px;
+            font-size: 42px;
             color: #fff;
             cursor: pointer;
             font-weight: bold;
+            z-index: 10000;
+            transition: color 0.2s ease;
+        }
+        .full-image span:hover {
+            color: #a363aa;
         }
     </style>
 </head>
@@ -91,18 +98,20 @@
         </div>
     </div>
 
-    <div class="full-image" id="fullImageBox">
-        <img src="Images/uklogo.png" id="fullImage" alt="Expanded view">
+    <div class="full-image" id="fullImageBox" onclick="closeFullImage()">
+        <img src="Images/uklogo.png" id="fullImage" alt="Expanded view" onclick="event.stopPropagation()">
         <span onclick="closeFullImage()">&times;</span>
     </div>
 
     <script>
         var fullImageBox = document.getElementById("fullImageBox");
         var fullImage = document.getElementById("fullImage");
+
         function openFullImage(pic){
             fullImageBox.style.display = "flex";
             fullImage.src = pic;
         }
+
         function closeFullImage(){
             fullImageBox.style.display = "none";
         }
